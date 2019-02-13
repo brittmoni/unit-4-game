@@ -15,3 +15,5 @@ else {
 9. reset game
 10. new random number generated
 */
+
+var randomNumber = 
