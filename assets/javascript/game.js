@@ -20,10 +20,10 @@ else {
 $("#compGuess").append(Math.floor(Math.random() * 120) + 19);
 
 // Set each button equal to a random number between 1 and 12
-$("#crystal1").append(userNumber).text(Math.floor(Math.random() * 12) + 1);
-$("#crystal2").append(userNumber).text(Math.floor(Math.random() * 12) + 1);
-$("#crystal3").append(userNumber).text(Math.floor(Math.random() * 12) + 1);
-$("#crystal4").append(userNumber).text(Math.floor(Math.random() * 12) + 1);
+$("#crystal1").append(Math.floor(Math.random() * 12) + 1);
+$("#crystal2").append(Math.floor(Math.random() * 12) + 1);
+$("#crystal3").append(Math.floor(Math.random() * 12) + 1);
+$("#crystal4").append(Math.floor(Math.random() * 12) + 1);
 
 // Create a div to take the User's random number
 var userNumber = $("<div>");
