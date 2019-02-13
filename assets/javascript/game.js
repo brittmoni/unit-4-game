@@ -17,18 +17,23 @@ else {
 */
 
 //Computer generated random number
-// var randomNumber = Math.floor(Math.random() * 120) + 19;
-// console.log(randomNumber);
 $("#compGuess").append(Math.floor(Math.random() * 120) + 19);
 
 // Set each button equal to a random number between 1 and 12
-// var userGuess = Math.floor(Math.random() * 12) + 1;
-// console.log(userGuess);
 $("#crystal1").append(Math.floor(Math.random() * 12) + 1);
 $("#crystal2").append(Math.floor(Math.random() * 12) + 1);
 $("#crystal3").append(Math.floor(Math.random() * 12) + 1);
 $("#crystal4").append(Math.floor(Math.random() * 12) + 1);
 
+// Create a div to take the User's random number
+var userNumber = $("<div>");
+userNumber.html("<p>Your score is: </p> <h1>0</h1>");
+$("#gameholder").append(userNumber);
+
+
 $("button").click(function() {
-  
+  $("#crystal1");
+  $("#crystal2");
+  $("#crystal3");
+  $("#crystal4");
 })
