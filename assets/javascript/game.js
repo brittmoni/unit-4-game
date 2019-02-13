@@ -17,5 +17,10 @@ else {
 */
 
 var randomNumber = Math.floor(Math.random() * 120) + 19;
-var userGuess;
-$("crystal1, crystal2, crystal3, crystal4").html = ("<button>");
+
+// Set each button equal to a random number between 1 and 12
+
+
+$("button").click(function() {
+  
+})
