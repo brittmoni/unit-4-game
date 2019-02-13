@@ -16,4 +16,6 @@ else {
 10. new random number generated
 */
 
-var randomNumber = 
+var randomNumber = Math.floor(Math.random() * 120) + 19;
+var userGuess;
+$("crystal1, crystal2, crystal3, crystal4").html = ("<button>");
