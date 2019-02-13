@@ -16,14 +16,19 @@ else {
 10. new random number generated
 */
 
-var randomNumber = Math.floor(Math.random() * 120) + 19;
-console.log(randomNumber);
+//Computer generated random number
+// var randomNumber = Math.floor(Math.random() * 120) + 19;
+// console.log(randomNumber);
+$("#compGuess").append(Math.floor(Math.random() * 120) + 19);
 
 // Set each button equal to a random number between 1 and 12
-var userGuess = Math.floor(Math.random() * 12) + 1;
-console.log(userGuess);
-
+// var userGuess = Math.floor(Math.random() * 12) + 1;
+// console.log(userGuess);
+$("#crystal1").append(Math.floor(Math.random() * 12) + 1);
+$("#crystal2").append(Math.floor(Math.random() * 12) + 1);
+$("#crystal3").append(Math.floor(Math.random() * 12) + 1);
+$("#crystal4").append(Math.floor(Math.random() * 12) + 1);
 
 $("button").click(function() {
-  //userGuess.show();
+  
 })
