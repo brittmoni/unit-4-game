@@ -17,10 +17,13 @@ else {
 */
 
 var randomNumber = Math.floor(Math.random() * 120) + 19;
+console.log(randomNumber);
 
 // Set each button equal to a random number between 1 and 12
+var userGuess = Math.floor(Math.random() * 12) + 1;
+console.log(userGuess);
 
 
 $("button").click(function() {
-  
+  //userGuess.show();
 })
