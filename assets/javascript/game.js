@@ -40,20 +40,20 @@ $("button").click(function() {
   $(userNumber).append(Math.floor(Math.random() * 12) + 1);
 });
 
-function reset(){
-  var wins;
-  var losses;
-  var compGuess = $("#compGuess").append(Math.floor(Math.random() * 120) + 19);
-  var userNumber;
-}
+// function reset(){
+//   var wins;
+//   var losses;
+//   var compGuess = $("#compGuess").append(Math.floor(Math.random() * 120) + 19);
+//   var userNumber;
+// }
 
-if(userNumber === compGuess) {
-  wins++;
-  $("#gameholder").append(userNumber).html("<p>You win!</p>");
-  reset();
-}
-else {
-  losses++;
-  $("#gameholder").append(userNumber).html("<p>Sorry you lost.</p>");
-  reset();
-}
+// if(userNumber === compGuess) {
+//   wins++;
+//   $("#gameholder").append(userNumber).html("<p>You win!</p>");
+//   reset();
+// }
+// else {
+//   losses++;
+//   $("#gameholder").append(userNumber).html("<p>Sorry you lost.</p>");
+//   reset();
+// }
