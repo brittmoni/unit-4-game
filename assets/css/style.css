@@ -1,0 +1,27 @@
+body {
+  background: #e4dad1;
+}
+
+header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.userInput {
+  padding: 25px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#compGuess {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 25px;
+}
+

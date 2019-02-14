@@ -16,21 +16,44 @@ else {
 10. new random number generated
 */
 
+var wins;
+var losses;
 //Computer generated random number
-$("#compGuess").append(Math.floor(Math.random() * 120) + 19);
+var compGuess = $("#compGuess").append(Math.floor(Math.random() * 120) + 19);
 
 // Set each button equal to a random number between 1 and 12
-$("#crystal1").append(Math.floor(Math.random() * 12) + 1);
-$("#crystal2").append(Math.floor(Math.random() * 12) + 1);
-$("#crystal3").append(Math.floor(Math.random() * 12) + 1);
-$("#crystal4").append(Math.floor(Math.random() * 12) + 1);
+// $("#crystal1").append(Math.floor(Math.random() * 12) + 1);
+// $("#crystal2").append(Math.floor(Math.random() * 12) + 1);
+// $("#crystal3").append(Math.floor(Math.random() * 12) + 1);
+// $("#crystal4").append(Math.floor(Math.random() * 12) + 1);
 
 // Create a div to take the User's random number
 var userNumber = $("<div>");
-userNumber.html("<p>Your score is: </p> <h1>0</h1>");
+userNumber.addClass("userInput");
+userNumber.html("<p>Your score is: </p>");
 $("#gameholder").append(userNumber);
 
 
 $("button").click(function() {
   //$("random number button value").appendTo(userNumber);
-})
+  //Sum of random numbers appended to userNumber
+  $(userNumber).append(Math.floor(Math.random() * 12) + 1);
+});
+
+function reset(){
+  var wins;
+  var losses;
+  var compGuess = $("#compGuess").append(Math.floor(Math.random() * 120) + 19);
+  var userNumber;
+}
+
+if(userNumber === compGuess) {
+  wins++;
+  $("#gameholder").append(userNumber).html("<p>You win!</p>");
+  reset();
+}
+else {
+  losses++;
+  $("#gameholder").append(userNumber).html("<p>Sorry you lost.</p>");
+  reset();
+}
