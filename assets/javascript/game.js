@@ -33,13 +33,14 @@ userNumber.addClass("userInput");
 userNumber.html("<p>Your score is: </p>");
 $("#gameholder").append(userNumber);
 
-//var sum = (Math.floor(Math.random()* 12) + 1) + (Math.floor(Math.random()* 12) + 1);
+var sum;
 
 
 $("button").click(function() {
   //$("random number button value").appendTo(userNumber);
   //Sum of random numbers appended to userNumber
-  var sum = (Math.floor(Math.random()* 12) + 1) + (Math.floor(Math.random()* 12) + 1);
+  sum = (Math.floor(Math.random()* 12) + 1);
+  
   $(userNumber).append(sum);
 });
 
